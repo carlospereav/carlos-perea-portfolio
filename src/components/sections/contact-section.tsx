@@ -20,7 +20,7 @@ export function ContactSection() {
             Contact
           </h2>
           <p className="text-lg text-slate-400 mb-8">
-            Have a project in mind or want to collaborate? Let's talk!
+            Have a project in mind or want to collaborate? Let&apos;s talk!
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">

@@ -24,7 +24,7 @@ export function AboutSection() {
   return (
     <section id="about" className="py-24 bg-slate-950">
       <div className="container mx-auto px-4">
-        {/* Sobre Mí */}
+        {/* About Me */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export function AboutSection() {
           className="max-w-4xl mx-auto mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
-            Sobre Mí
+            About Me
           </h2>
           
           <p className="text-lg text-slate-300 mb-8 leading-relaxed">
@@ -47,7 +47,7 @@ export function AboutSection() {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-semibold text-slate-100 mb-4">
-              Habilidades Técnicas
+              Technical Skills
             </h3>
             <div className="flex flex-wrap gap-2">
               {profile.about.skills.map((skill) => (
@@ -65,7 +65,7 @@ export function AboutSection() {
           </motion.div>
         </motion.div>
 
-        {/* Experiencia Profesional */}
+        {/* Professional Experience */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ export function AboutSection() {
           className="max-w-4xl mx-auto mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-10 bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
-            Experiencia
+            Experience
           </h2>
 
           <div className="relative">
@@ -121,7 +121,7 @@ export function AboutSection() {
                     
                     {exp.type === 'volunteer' && (
                       <Badge variant="outline" className="mb-3 border-rose-400/50 text-rose-400">
-                        Voluntariado
+                        Volunteer
                       </Badge>
                     )}
                     
@@ -140,7 +140,7 @@ export function AboutSection() {
           </div>
         </motion.div>
 
-        {/* Educación */}
+        {/* Education */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -149,7 +149,7 @@ export function AboutSection() {
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-10 bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
-            Educación
+            Education
           </h2>
 
           <div className="grid gap-6">

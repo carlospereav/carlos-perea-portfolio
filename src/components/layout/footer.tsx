@@ -11,7 +11,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <div className="flex flex-col items-center md:items-start">
             <p className="text-sm text-slate-400">
-              © {currentYear} {profile.name}. Todos los derechos reservados.
+              © {currentYear} {profile.name}. All rights reserved.
             </p>
             <p className="text-xs text-slate-500 mt-1">
               {profile.role}

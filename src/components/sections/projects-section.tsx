@@ -43,10 +43,10 @@ export function ProjectsSection() {
           className="mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
-            Proyectos
+            Projects
           </h2>
           <p className="text-slate-400 text-center max-w-2xl mx-auto">
-            Proyectos destacados desarrollados durante mi experiencia profesional
+            Featured projects developed during my professional experience
           </p>
         </motion.div>
 
@@ -65,7 +65,7 @@ export function ProjectsSection() {
               onClick={() => setSelectedCategory(category)}
               className="capitalize"
             >
-              {category === "all" ? "Todos" : category}
+              {category === "all" ? "All" : category}
             </Button>
           ))}
         </motion.div>
@@ -102,7 +102,7 @@ function ProjectCard({
             <CardTitle className="text-xl">{project.title}</CardTitle>
             {project.featured && (
               <Badge variant="default" className="ml-2">
-                Destacado
+                Featured
               </Badge>
             )}
           </div>

@@ -54,10 +54,10 @@ export function HeroSection() {
             className="flex gap-4 flex-wrap justify-center"
           >
             <Button onClick={() => scrollToSection("projects")} size="lg">
-              Ver Proyectos
+              View Projects
             </Button>
             <Button onClick={() => scrollToSection("about")} variant="outline" size="lg">
-              Sobre Mí
+              About Me
             </Button>
           </motion.div>
 

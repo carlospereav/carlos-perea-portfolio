@@ -43,9 +43,9 @@ export interface Project {
   title: string;
   category: 'Computer Vision' | 'NLP' | 'Agents' | 'Time Series';
   description: string;
-  longDescription: string; // Markdown soportado
+  longDescription: string; // Markdown supported
   techStack: string[];
-  image: string; // Ruta a assets
+  image: string; // Path to assets
   links: {
     github?: string;
     demo?: string;
@@ -58,18 +58,21 @@ export interface Project {
 export const profile: Profile = {
   name: "Carlos Perea Vega",
   role: "Data Scientist & AI Engineer",
-  tagline: "Transformando datos complejos en decisiones inteligentes y agentes autónomos.",
+  tagline: "Transforming complex data into intelligent decisions and autonomous agents.",
   about: {
-    summary: "Data Scientist y Matemático especializado en Inteligencia Artificial y Google Cloud. Experiencia profesional desarrollando soluciones con LLMs (LangChain) y construyendo pipelines de datos modernos (Dataform, BigQuery). Apasionado por aplicar Machine Learning y metodologías Ágiles para resolver problemas de negocio complejos.",
+    summary: "Data Scientist and Mathematician specialized in Artificial Intelligence and Google Cloud. Professional experience developing solutions with LLMs (LangChain) and building modern data pipelines (Dataform, BigQuery). Passionate about applying Machine Learning and Agile methodologies to solve complex business problems. Fluent technical communication skills in English (C1 Certificate).",
     skills: [
       "Python",
       "SQL",
       "R",
       "Git",
       "Docker",
+      "Agile - Scrum",
+      "n8n",
       "LangChain",
       "LangGraph",
       "RAG",
+      "ADK",
       "OpenAI API",
       "FastAPI",
       "Pandas",
@@ -78,11 +81,10 @@ export const profile: Profile = {
       "TensorFlow",
       "PyTorch",
       "BigQuery",
-      "Dataform",
       "Looker Studio",
+      "Dataform",
       "Cloud Run",
-      "Kubernetes",
-      "n8n"
+      "Kubernetes"
     ]
   },
   socials: {
@@ -92,14 +94,14 @@ export const profile: Profile = {
   }
 };
 
-// Projects Data - Solo proyecto real
+// Projects Data - Real project only
 export const projects: Project[] = [
   {
     id: "git-commit-classifier",
     title: "Git Commit Classifier",
     category: "NLP",
-    description: "Modelo de Deep Learning construido con PyTorch y Transformers para clasificar automáticamente mensajes de commit de Git según Conventional Commits. Incluye demo interactiva con Streamlit.",
-    longDescription: "Un modelo de Deep Learning construido con PyTorch y Transformers (Hugging Face) que clasifica automáticamente los mensajes de commit de Git según el estándar Conventional Commits (feat, fix, docs, style, refactor, test, chore, etc.). El proyecto incluye una aplicación interactiva desarrollada con Streamlit que permite a los usuarios probar el modelo en tiempo real. El modelo utiliza arquitecturas de transformers pre-entrenadas y ha sido fine-tuneado específicamente para la tarea de clasificación de commits.",
+    description: "Deep Learning model built with PyTorch and Transformers to automatically classify Git commit messages according to Conventional Commits. Includes interactive demo with Streamlit.",
+    longDescription: "A Deep Learning model built with PyTorch and Transformers (Hugging Face) that automatically classifies Git commit messages according to the Conventional Commits standard (feat, fix, docs, style, refactor, test, chore, etc.). The project includes an interactive application developed with Streamlit that allows users to test the model in real-time. The model uses pre-trained transformer architectures and has been fine-tuned specifically for the commit classification task.",
     techStack: ["PyTorch", "Transformers", "Hugging Face", "Streamlit", "Python", "Deep Learning", "NLP", "Google Cloud Run"],
     image: "/images/projects/git-commit-classifier.jpg",
     links: { 
@@ -116,29 +118,29 @@ export const experience: Experience[] = [
     id: "vitaly",
     company: "Vitaly Health Services",
     role: "Data Scientist",
-    location: "Badajoz, España",
+    location: "Badajoz, Spain",
     startDate: "Mar. 2024",
     endDate: "Nov. 2025",
     type: "work",
     description: [
-      "Desarrollo de un motor de recomendación con LangChain expuesto mediante FastAPI para maximizar la venta cruzada de servicios. Diseño de estrategia dual: inferencia en tiempo real para CRM y procesamiento asíncrono masivo mediante OpenAI Batch API.",
-      "Diseño de arquitectura de agentes ReAct con LangGraph para análisis clínico inteligente y generación de recomendaciones de salud personalizadas.",
-      "Desarrollo de modelos de Machine Learning no supervisado (Clustering) para la planificación estratégica de nuevas aperturas de centros.",
-      "Diseño de pipelines ETL en Dataform (GCP) y modelado de datos en BigQuery. Implementación de algoritmo de segmentación de clientes y automatización del seguimiento de cartera mediante dashboards en Looker Studio.",
-      "Desarrollo de modelos para identificar drivers clave de rentabilidad utilizando técnicas de Feature Importance.",
-      "Desarrollo de chatbot en n8n para gestión de citas médicas con validación de clientes y enrutamiento automático."
+      "Developed a recommendation engine using LangChain, exposed via FastAPI, to maximize cross-selling of services. Designed a dual strategy: real-time inference for CRM and massive asynchronous processing via OpenAI Batch API, optimizing operational costs.",
+      "Designed a ReAct agent architecture using LangGraph for intelligent clinical analysis and the generation of personalized health recommendations, managing their distribution across multiple communication channels.",
+      "Developed unsupervised Machine Learning models (Clustering) for the strategic planning of new center openings. Analyzed the geographic distribution of clients and workforce volume to detect underserved high-demand areas and maximize network coverage.",
+      "Designed ETL pipelines in Dataform (GCP) and data modeling in BigQuery to centralize accounting information. Implemented a client segmentation algorithm (based on risk and payment behavior) and automated portfolio tracking via interactive dashboards in Looker Studio.",
+      "Developed models to identify key profitability drivers, using Feature Importance techniques to isolate critical variables and generate executive reports that guided commercial strategy.",
+      "Developed a chatbot using n8n for medical appointment management that analyzes user intent. The system integrates active client validation and automatic routing between the calendar and Contact Center, reducing manual administrative workload."
     ]
   },
   {
     id: "scouts",
     company: "Scouts de España",
-    role: "Monitor de Ocio y Tiempo Libre",
-    location: "Badajoz, España",
+    role: "Volunteer; Leisure and Free Time Instructor",
+    location: "Badajoz, Spain",
     startDate: "Sept. 2021",
     endDate: "Sept. 2023",
     type: "volunteer",
     description: [
-      "Liderazgo y Gestión de Riesgos: Coordinación de equipos juveniles (14-17 años) y planificación logística de actividades de montaña, asegurando el cumplimiento de protocolos de seguridad."
+      "Leadership and Risk Management: Coordinated youth teams (ages 14-17) and planned logistics for mountain activities, ensuring compliance with safety protocols."
     ]
   }
 ];
@@ -147,31 +149,31 @@ export const experience: Experience[] = [
 export const education: Education[] = [
   {
     id: "master",
-    institution: "Universidad de Extremadura",
-    degree: "Máster Universitario en Dirección y Gestión de Proyectos",
-    location: "Badajoz, España",
+    institution: "Universidad de Extremadura - School of Industrial Engineering",
+    degree: "Master's Degree in Project Management",
+    location: "Badajoz, Spain",
     startDate: "Sept. 2024",
     endDate: "Jun. 2025"
   },
   {
     id: "grado",
     institution: "Universidad de Extremadura",
-    degree: "Grado en Matemáticas",
-    location: "Badajoz, España",
+    degree: "Bachelor's Degree in Mathematics",
+    location: "Badajoz, Spain",
     startDate: "Sept. 2018",
     endDate: "Nov. 2023",
     details: [
-      "ERASMUS: Uniwersytet Zielonogórski (Polonia) - Sept. 2021 a Jun. 2022",
-      "SICUE: Universidad de Málaga - Sept. 2022 a Jun. 2023"
+      "ERASMUS: Uniwersytet Zielonogórski (Poland) - Sept. 2021 to Jun. 2022",
+      "SICUE: Universidad de Málaga (Spain) - Sept. 2022 to Jun. 2023"
     ]
   },
   {
     id: "cambridge",
     institution: "University of Cambridge",
     degree: "Cambridge English Certificate: Advanced C1 (CAE)",
-    location: "Badajoz, España",
-    startDate: "Dic. 2020",
-    endDate: "Dic. 2020"
+    location: "Badajoz, Spain",
+    startDate: "Dec. 2020",
+    endDate: "Dec. 2020"
   }
 ];
 

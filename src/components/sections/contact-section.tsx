@@ -17,10 +17,10 @@ export function ContactSection() {
           className="max-w-2xl mx-auto text-center"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
-            Contacto
+            Contact
           </h2>
           <p className="text-lg text-slate-400 mb-8">
-            ¿Tienes un proyecto en mente o quieres colaborar? ¡Hablemos!
+            Have a project in mind or want to collaborate? Let's talk!
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">

@@ -22,19 +22,19 @@ export function Header() {
             onClick={() => scrollToSection("about")}
             className="text-sm font-medium text-slate-400 transition-colors hover:text-slate-100"
           >
-            Sobre mí
+            About
           </button>
           <button
             onClick={() => scrollToSection("projects")}
             className="text-sm font-medium text-slate-400 transition-colors hover:text-slate-100"
           >
-            Proyectos
+            Projects
           </button>
           <button
             onClick={() => scrollToSection("contact")}
             className="text-sm font-medium text-slate-400 transition-colors hover:text-slate-100"
           >
-            Contacto
+            Contact
           </button>
         </nav>
 

@@ -26,10 +26,19 @@ export const metadata: Metadata = {
     url: "https://carlos-perea-portfolio.vercel.app",
     siteName: "Carlos Perea Portfolio",
     title: "Carlos Perea - Data Scientist & AI Engineer",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Carlos Perea - Data Scientist & AI Engineer",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Carlos Perea - Data Scientist & AI Engineer",
+    images: ["/opengraph-image"],
   },
 };
 

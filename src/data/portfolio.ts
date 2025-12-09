@@ -14,6 +14,29 @@ export interface Profile {
   };
 }
 
+// Experience Data Interface
+export interface Experience {
+  id: string;
+  company: string;
+  role: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  description: string[];
+  type: 'work' | 'volunteer';
+}
+
+// Education Data Interface
+export interface Education {
+  id: string;
+  institution: string;
+  degree: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  details?: string[];
+}
+
 // Project Data Interface
 export interface Project {
   id: string;
@@ -84,6 +107,71 @@ export const projects: Project[] = [
       demo: "https://git-commit-classifier-323279730842.europe-southwest1.run.app" 
     },
     featured: true
+  }
+];
+
+// Experience Data
+export const experience: Experience[] = [
+  {
+    id: "vitaly",
+    company: "Vitaly Health Services",
+    role: "Data Scientist",
+    location: "Badajoz, España",
+    startDate: "Mar. 2024",
+    endDate: "Nov. 2025",
+    type: "work",
+    description: [
+      "Desarrollo de un motor de recomendación con LangChain expuesto mediante FastAPI para maximizar la venta cruzada de servicios. Diseño de estrategia dual: inferencia en tiempo real para CRM y procesamiento asíncrono masivo mediante OpenAI Batch API.",
+      "Diseño de arquitectura de agentes ReAct con LangGraph para análisis clínico inteligente y generación de recomendaciones de salud personalizadas.",
+      "Desarrollo de modelos de Machine Learning no supervisado (Clustering) para la planificación estratégica de nuevas aperturas de centros.",
+      "Diseño de pipelines ETL en Dataform (GCP) y modelado de datos en BigQuery. Implementación de algoritmo de segmentación de clientes y automatización del seguimiento de cartera mediante dashboards en Looker Studio.",
+      "Desarrollo de modelos para identificar drivers clave de rentabilidad utilizando técnicas de Feature Importance.",
+      "Desarrollo de chatbot en n8n para gestión de citas médicas con validación de clientes y enrutamiento automático."
+    ]
+  },
+  {
+    id: "scouts",
+    company: "Scouts de España",
+    role: "Monitor de Ocio y Tiempo Libre",
+    location: "Badajoz, España",
+    startDate: "Sept. 2021",
+    endDate: "Sept. 2023",
+    type: "volunteer",
+    description: [
+      "Liderazgo y Gestión de Riesgos: Coordinación de equipos juveniles (14-17 años) y planificación logística de actividades de montaña, asegurando el cumplimiento de protocolos de seguridad."
+    ]
+  }
+];
+
+// Education Data
+export const education: Education[] = [
+  {
+    id: "master",
+    institution: "Universidad de Extremadura",
+    degree: "Máster Universitario en Dirección y Gestión de Proyectos",
+    location: "Badajoz, España",
+    startDate: "Sept. 2024",
+    endDate: "Jun. 2025"
+  },
+  {
+    id: "grado",
+    institution: "Universidad de Extremadura",
+    degree: "Grado en Matemáticas",
+    location: "Badajoz, España",
+    startDate: "Sept. 2018",
+    endDate: "Nov. 2023",
+    details: [
+      "ERASMUS: Uniwersytet Zielonogórski (Polonia) - Sept. 2021 a Jun. 2022",
+      "SICUE: Universidad de Málaga - Sept. 2022 a Jun. 2023"
+    ]
+  },
+  {
+    id: "cambridge",
+    institution: "University of Cambridge",
+    degree: "Cambridge English Certificate: Advanced C1 (CAE)",
+    location: "Badajoz, España",
+    startDate: "Dic. 2020",
+    endDate: "Dic. 2020"
   }
 ];
 

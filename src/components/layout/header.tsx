@@ -15,14 +15,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-800 bg-slate-950/80 backdrop-blur-md supports-[backdrop-filter]:bg-slate-950/60">
       <div className="container flex h-16 items-center justify-between px-4">
-        <button
-          onClick={() => scrollToSection("hero")}
-          className="flex items-center space-x-2 cursor-pointer"
-        >
-          <span className="text-xl font-bold bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
-            {profile.name.split(" ")[0]}
-          </span>
-        </button>
+        <div className="w-[120px] hidden md:block" />
         
         <nav className="hidden md:flex items-center space-x-6">
           <button
@@ -45,7 +38,7 @@ export function Header() {
           </button>
         </nav>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 w-[120px] justify-end">
           <Button variant="ghost" size="icon" asChild>
             <a href={profile.socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="h-5 w-5" />

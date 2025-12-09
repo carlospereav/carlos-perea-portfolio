@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { profile } from "@/data/portfolio";
-import { Button } from "@/components/ui/button";
+import { profile } from "../../data/portfolio";
+import { Button } from "../ui/button";
 import { ChevronDown } from "lucide-react";
 
 export function HeroSection() {

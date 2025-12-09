@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { profile } from "@/data/portfolio";
-import { Badge } from "@/components/ui/badge";
+import { profile } from "../../data/portfolio";
+import { Badge } from "../ui/badge";
 
 export function AboutSection() {
   const containerVariants = {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
-import { profile } from "@/data/portfolio";
+import { profile } from "../../data/portfolio";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();

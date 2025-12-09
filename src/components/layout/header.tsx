@@ -1,8 +1,8 @@
 "use client";
 
 import { Github, Linkedin, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { profile } from "@/data/portfolio";
+import { Button } from "../ui/button";
+import { profile } from "../../data/portfolio";
 
 export function Header() {
   const scrollToSection = (id: string) => {

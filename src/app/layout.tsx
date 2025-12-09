@@ -16,7 +16,31 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Carlos Perea - Data Scientist Portfolio",
-  description: "Portfolio of a Senior Data Scientist & AI Engineer",
+  description: "Data Scientist & AI Engineer especializado en Inteligencia Artificial, LangChain, LangGraph y Google Cloud. Transformando datos complejos en decisiones inteligentes.",
+  keywords: ["Data Scientist", "AI Engineer", "Machine Learning", "LangChain", "Python", "Portfolio"],
+  authors: [{ name: "Carlos Perea Vega" }],
+  openGraph: {
+    type: "website",
+    locale: "es_ES",
+    url: "https://carlos-perea-portfolio.vercel.app",
+    siteName: "Carlos Perea Portfolio",
+    title: "Carlos Perea - Data Scientist & AI Engineer",
+    description: "Data Scientist & AI Engineer especializado en Inteligencia Artificial, LangChain, LangGraph y Google Cloud. Transformando datos complejos en decisiones inteligentes.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Carlos Perea - Data Scientist Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Carlos Perea - Data Scientist & AI Engineer",
+    description: "Data Scientist & AI Engineer especializado en Inteligencia Artificial, LangChain, LangGraph y Google Cloud.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
